@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Pushpresent_Example' do
+  pod 'Pushpresent', :path => '../'
+
+  target 'Pushpresent_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
