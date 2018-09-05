@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2A53D1207849F5D657FF3777 /* Pods_Pushpresent_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CFDA4BCBEAF95F00942CB4 /* Pods_Pushpresent_Tests.framework */; };
+		3A8C2F8E213FB06F004D92D0 /* UINavigationController+WLNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C2F86213FB06E004D92D0 /* UINavigationController+WLNav.m */; };
+		3A8C2F8F213FB06F004D92D0 /* WLPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C2F87213FB06E004D92D0 /* WLPushViewController.m */; };
+		3A8C2F90213FB06F004D92D0 /* WLFirstPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C2F8A213FB06E004D92D0 /* WLFirstPresentViewController.m */; };
+		3A8C2F91213FB06F004D92D0 /* WLSecondPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C2F8C213FB06F004D92D0 /* WLSecondPresentViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +42,14 @@
 
 /* Begin PBXFileReference section */
 		2A36FAE6B8E0299EDE5F932F /* Pods-Pushpresent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pushpresent_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pushpresent_Example/Pods-Pushpresent_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3A8C2F86213FB06E004D92D0 /* UINavigationController+WLNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WLNav.m"; sourceTree = "<group>"; };
+		3A8C2F87213FB06E004D92D0 /* WLPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLPushViewController.m; sourceTree = "<group>"; };
+		3A8C2F88213FB06E004D92D0 /* WLFirstPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLFirstPresentViewController.h; sourceTree = "<group>"; };
+		3A8C2F89213FB06E004D92D0 /* UINavigationController+WLNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WLNav.h"; sourceTree = "<group>"; };
+		3A8C2F8A213FB06E004D92D0 /* WLFirstPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLFirstPresentViewController.m; sourceTree = "<group>"; };
+		3A8C2F8B213FB06E004D92D0 /* WLSecondPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSecondPresentViewController.h; sourceTree = "<group>"; };
+		3A8C2F8C213FB06F004D92D0 /* WLSecondPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSecondPresentViewController.m; sourceTree = "<group>"; };
+		3A8C2F8D213FB06F004D92D0 /* WLPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLPushViewController.h; sourceTree = "<group>"; };
 		49EA87938B94C4C4EF350220 /* Pods-Pushpresent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pushpresent_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pushpresent_Example/Pods-Pushpresent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4AABBE984BD2704A0CDC8524 /* Pods-Pushpresent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pushpresent_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pushpresent_Tests/Pods-Pushpresent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4B84FDD8309AD639E110EEA9 /* Pods-Pushpresent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pushpresent_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pushpresent_Tests/Pods-Pushpresent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,10 +75,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		733B1B3B47C3F2AAF3249180 /* Pods_Pushpresent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pushpresent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8BC01C0C70675010A201510E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8BC9F2F5757A14DEEA5CD597 /* Pushpresent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Pushpresent.podspec; path = ../Pushpresent.podspec; sourceTree = "<group>"; };
+		8BC01C0C70675010A201510E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8BC9F2F5757A14DEEA5CD597 /* Pushpresent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Pushpresent.podspec; path = ../Pushpresent.podspec; sourceTree = "<group>"; };
 		B0CFDA4BCBEAF95F00942CB4 /* Pods_Pushpresent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pushpresent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F78E62632518CC47180BBEAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F78E62632518CC47180BBEAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +146,14 @@
 			children = (
 				6003F59C195388D20070C39A /* WLAppDelegate.h */,
 				6003F59D195388D20070C39A /* WLAppDelegate.m */,
+				3A8C2F89213FB06E004D92D0 /* UINavigationController+WLNav.h */,
+				3A8C2F86213FB06E004D92D0 /* UINavigationController+WLNav.m */,
+				3A8C2F88213FB06E004D92D0 /* WLFirstPresentViewController.h */,
+				3A8C2F8A213FB06E004D92D0 /* WLFirstPresentViewController.m */,
+				3A8C2F8D213FB06F004D92D0 /* WLPushViewController.h */,
+				3A8C2F87213FB06E004D92D0 /* WLPushViewController.m */,
+				3A8C2F8B213FB06E004D92D0 /* WLSecondPresentViewController.h */,
+				3A8C2F8C213FB06F004D92D0 /* WLSecondPresentViewController.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WLViewController.h */,
 				6003F5A6195388D20070C39A /* WLViewController.m */,
@@ -248,6 +268,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "1587272615@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M9RDKX4YNM;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -374,8 +397,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8C2F91213FB06F004D92D0 /* WLSecondPresentViewController.m in Sources */,
+				3A8C2F8F213FB06F004D92D0 /* WLPushViewController.m in Sources */,
 				6003F59E195388D20070C39A /* WLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WLViewController.m in Sources */,
+				3A8C2F8E213FB06F004D92D0 /* UINavigationController+WLNav.m in Sources */,
+				3A8C2F90213FB06F004D92D0 /* WLFirstPresentViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +531,7 @@
 			baseConfigurationReference = 49EA87938B94C4C4EF350220 /* Pods-Pushpresent_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M9RDKX4YNM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pushpresent/Pushpresent-Prefix.pch";
 				INFOPLIST_FILE = "Pushpresent/Pushpresent-Info.plist";
@@ -519,6 +547,7 @@
 			baseConfigurationReference = 2A36FAE6B8E0299EDE5F932F /* Pods-Pushpresent_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M9RDKX4YNM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pushpresent/Pushpresent-Prefix.pch";
 				INFOPLIST_FILE = "Pushpresent/Pushpresent-Info.plist";

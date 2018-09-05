@@ -7,6 +7,7 @@
 //
 
 #import "WLViewController.h"
+#import "WLFirstPresentViewController.h"
 
 @interface WLViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)firstPresentAction:(id)sender {
+    WLFirstPresentViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"WLFirstPresentViewController"];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
